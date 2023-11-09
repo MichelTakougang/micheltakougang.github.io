@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critiquet</title>
+    <link rel="shortcut icon" href="./images/bonne_mauvaise_critique.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/tp2.css">
+    <link rel="stylesheet" href="./CSS/critique.css">
+</head>
+<body class="body3">
+    <header class="ombre">
+        <nav>            
+            <ul>
+                <li class="nav-item"><a href="index.html" ><img class="logo" src="./images/avatar 3.png" alt=""></a></li>
+                <li class="nav-item"><a href="index.html" >Accueil</a></li>
+                <li class="nav-item"><a href="interet.html">Intérêts</a></li>
+                <li class="nav-item"><a href="critiques.html" class="active">Critiques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="ombre">
+        
+        <h1>Commentaires</h1>
+        <p class="mon-message">Dans cette partie vous pouvez donner votre avis au sujet d'un jeu présenté et lire les commentaires des autres joueurs</p>
+        <div id="gammeDeJeux">
+            <div id="totalOverdose">
+                <img class="img" src="./images/TOD.jpeg" alt="">
+                <p class="resume"> Total Overdose sur PC est un jeu d'action vous emmenant à la recherche d'explications sur la mort du père du héros, semble t-il liée à une sombre histoire de trafic de drogue. Il faudra donc faire parler la poudre et les muscles pour intégrer les différents cartels et faire la lumière sur toute cette histoire.</p>
+            </div>
+            <div id="fifa23">
+                <img class="img" src="./images/fifa2023.jpeg" alt="">
+                <p class="resume">FIFA 23 est un jeu vidéo de simulation de football développé par EA Vancouver et édité par Electronic Arts. Il s'agit du 30e volet de la série FIFA.</p>
+            </div>
+            <div id="needForSpeed">
+                <img class="img" src="./images/needForSpeed.jpeg" alt="">
+                <p class="resume">Chaque adversaire impose une série de courses à gagner ainsi que des défis à réussir face à la police. Pour récupérer sa voiture, le joueur n'a donc d'autre choix que d'affronter les membres un par un, gagner des courses, provoquer la police et devenir à son tour le numéro 1 de la Liste Noire.</p>
+            </div>
+            <div id="ageOfAmpire">
+                <img class="img" src="./images/age of empire.jpeg" alt="">
+                <p class="resume">L'action du jeu se déroule dans un contexte historique pendant le Moyen Âge, le joueur devant faire évoluer une civilisation à travers quatre âges — l'âge sombre, l'âge féodal, l'âge des châteaux et l'âge impérial — afin de débloquer de nouvelles technologies et unités pour bâtir un empire.</p>
+            </div>   
+        </div>
+        <!-- =================================================Formulaire + vidéos============================================== -->
+        <div id="zone">
+            <form action="" id="formulaire">
+                <h3>Ajouter un commentaire</h3>
+                <input class="form-items" type="text" name="pseudo" id="" placeholder="Votre pseudo ici">
+                <select class="form-items" name="jeux" id="" >
+                    <option value="">selectionnez le jeu</option>
+                    <option value="">Total Overdose</option>
+                    <option value="">fifa 2023</option>
+                    <option value="">Need For Speed most Wanted</option>
+                    <option value="">Age of Empire </option>
+                </select>
+                <select style="color: red;" class="form-items" name="note" id="" >
+                    <option value="">&#9733; &#10025; &#10025; &#10025; &#10025;</option>
+                    <option value="" style="color: red;">&#9733; &#9733; &#10025; &#10025; &#10025; </option>
+                    <option value="">&#9733; &#9733; &#9733; &#9733; &#10025;</option>
+                    <option value="">&#9733; &#9733; &#9733; &#9733; &#9733; </option>
+                </select>
+                <textarea class="form-items" name="" id="" cols="30" rows="10" placeholder="Décrivez votre experience..."></textarea>
+                <div id="mesBoutons">
+                    <input id="send" type="submit" value="Envoyer">
+                    <input id="remove" type="reset" value="Annuler">
+                </div>
+            </form>
+            <!-- <video width="930" type="mp4" height="523" muted  controls src="https://www.youtube.com/embed/YhfjMiYV98o"></video> -->
+            <!-- <video id="presentationDesJeux"></video> -->
+            <iframe id="presentationDesJeux" autoplay src="https://www.youtube.com/embed/YhfjMiYV98o" ></iframe>
+            <!-- <iframe width="930" height="523" src="https://www.youtube.com/embed/yseqtsTfIl8"></iframe> -->
+        </div>
+
+        <!-- Faire un formulaire a gauche et une vidéos a droite ¨ Précision la vidéos doit contenir l'ensemble de toutes les vidéos de jeu presenté dans la page sous forme d'animation  ¨ -->
+
+        <div id="ZoneCommentaires">
+            <h3 class="text-firstColor">Quelques commentaires</h3>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar 3.png" alt=""></span>
+                    <div class="pseudo">
+                        Michel
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quia?</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">12</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">46</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar_12-removebg-preview.png" alt=""></span>
+                    <div class="pseudo">
+                        Jullien
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">J'adore les poursuite policère dans les jeux vidéos. Et j'ai trouver mon compte avec le needForSpeed. Graphisme tres realiste le senarios est magnifique.</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#9733; &#9733; &#9733; &#10025;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">20</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar_13-removebg-preview.png" alt=""></span>
+                    <div class="pseudo">
+                        Niki
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">J'adore les graphics de l'éditions remasterisé de Age of Empire 2</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">22</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">43</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar_15-removebg-preview.png" alt=""></span>
+                    <div class="pseudo">
+                        Jean Luc
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">J'attendais ce jeu avec impatience et je peux dire que sa en valait la peine</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">65</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar_16-removebg-preview.png" alt=""></span>
+                    <div class="pseudo">
+                        Axel
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">Très déçu par la troisième partie c'est un peu comme emballer de la poussière avec un papier cadeau</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#10025; &#10025; &#10025; &#10025;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">65</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <div class="entete-commentaire">
+                    <span class="photo"><img src="./images/avatar_9-removebg-preview.png" alt=""></span>
+                    <div class="pseudo">
+                        William
+                    </div>
+                </div>
+                <div class="contenus">
+                    <p class="messageText">Très déçu par la troisième partie c'est un peu comme emballer de la poussière avec un papier cadeau</p>
+                    <div class="message-footer">
+                        <span class="rate">&#9733; &#10025; &#10025; &#10025; &#10025;</span>
+                        <span class="like-unlike"><img src="./images/unlike.png" alt="">65</span>
+                        <span class="like-unlike"><img src="./images/like (2).png" alt="">16</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Changer l'image des differents avatarsx et commencer le responsive de toutes tes pages -->
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Michel Junior &copy;Takougang Cooporation 2023  nous conctacter avec l'adresse <a href="mailto:micheljunior.tatatakougang@etu.cegepdrummond.ca" class="adresse">micheljunior.tatatakougang@etu.cegepdrummond.ca</a>
+        </p>
+    </footer>
+</body>
+</html>

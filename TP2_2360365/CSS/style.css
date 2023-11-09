@@ -1,0 +1,166 @@
+@import url("./tp2.css");
+.body1{
+    background-attachment: fixed;
+    background-image: url(../images/bgimage.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 8px;
+    color: var(--secondColor);
+}
+.avatar{
+    position: relative;
+    object-fit: cover;
+    left: 40%;
+    margin: 8px;
+    padding: 8px;
+}
+.content{
+    position: relative;
+    font-size: 1.1rem;
+}
+#mes-interets{
+    display: grid;
+    grid-template-areas: 
+    "musique sport jeux"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 18px;
+}
+.interet{
+    list-style-type: none;
+    position: relative;
+    margin: 8px;
+    background-color: var(--secondColor);
+    border: none;
+    border-radius: 12px;
+    color: var(--thirdColor);
+    transition: .3s ease-out;
+}
+.interet:hover{
+    transform: translateY(-2.5%);
+}
+#musique{
+    /* position: relative; */
+    grid-area: musique;
+}
+#sport{
+    /* position: relative; */
+    grid-area: sport;
+}
+#jeux{
+    /* position: relative; */
+    grid-area: jeux;
+}
+.club{
+    text-decoration: none;
+    color: var(--default);
+}
+.interet > h3{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: var(--firstColor);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: none;
+    /* margin-left: 0; */
+}
+.liste-ordone li{
+    list-style-type: '\26A9';
+}
+#mes_cours{
+    position: relative;
+    margin: 15px;
+    padding: 8px;
+}
+table{
+    position: relative;
+    background-color: var(--secondColor);
+    font-family: 'Roboto';
+    color: var(--default);
+    border: none;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+    transition: 0.2s ease-out;
+    font-size: 1.06rem;
+}
+thead{
+    background-color: var(--firstColor);
+    text-align: center;
+}
+tr td{
+    margin: 0;
+    padding: 2px;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+
+}
+tr:nth-child(even){
+    background-color: var(--default);
+    color: var(--secondColor);
+    text-align: center;
+    padding: 12px;
+}
+tr :nth-child(odd){
+    text-align: center;
+}
+caption{
+    caption-side: bottom;
+    font-style: oblique;
+    /* margin-top: 8px; */
+    padding: 8px;
+    font-size: 14px;
+    /* background-color: var(--firstColor); */
+}
+@media (max-width: 1200px) and (min-width: 992px){
+    li p , li p li{
+        font-size: .9rem;
+    }
+    table{
+        font-size: .9rem;
+    }
+}
+@media (max-width:991px) and (min-width: 768px){
+    li p , li p ul li{
+        font-size: .9rem;
+    }
+    table{
+        font-size: .7rem;
+    }
+}
+@media(max-width: 768px){
+    /* li p , li p ul li{
+        font-size: .6rem;
+    } */
+    #mes-interets{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "musique"
+            "sport"
+            "jeux"
+        ;
+        justify-content: center;
+       font-size: 15px;
+    }
+    .interet{
+        padding-bottom: 10px;
+    }
+    table{
+        font-size: .5rem;
+    }
+}
+
+
+
+
+
