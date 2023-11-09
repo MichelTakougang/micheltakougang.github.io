@@ -1,0 +1,575 @@
+@import url(tp2.css);
+
+.body2{
+    background-attachment: fixed;
+    background-image: url(../images/picture1.jpeg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.interet-item{
+    position: relative;
+    width: 25%;
+    height: auto;
+    padding: 15px;
+    margin: 12px;
+    color: var(--default);
+    background-color: var(--firstColor);
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+
+}
+.interet-item li{
+    list-style-type: none;
+}
+#musiqueSpace{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Gims Black_M Niska Ninho "
+    ;
+    gap: 12px;
+    padding: 0;
+    margin-top: 50px;
+}
+/* #musiqueSpace:target */
+.card-img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius:6px;
+    border-top-left-radius: 6px;
+}
+.card-body{
+    height: 160px;
+    position: relative;
+    top: -5px;
+    background-color: var(--secondColor);
+    color: var(--default);
+    border: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "card-message"
+    "button"    
+    ;
+    /* z-index: ; */
+}
+.card-title{
+    text-align: center;
+    padding-top: 5px;
+    grid-area: title;
+}
+.card-message{
+    font-size: 14px;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    grid-area: card-message;
+}
+.button{
+    position: relative;
+    margin: 8px;
+    padding: 6px;
+    width: 100px;
+    grid-area: button;
+    text-align: center;
+    color: var(--default);
+    border: none;
+    border-radius: 4px;
+    font-size: 11px;
+    background-color: var(--firstColor);
+    bottom: 0px;
+    float: right;
+    bottom: 3px;    
+}
+.button a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--default);
+}
+a>span{
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+a>span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: 10px;
+    top: 0px;
+    transition: .3 ease-out;
+}
+.button:hover span{
+    padding-right: 6px;
+}
+.button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+.clubs{
+    position: relative;
+    object-fit: center/cover;
+    height: 120px;
+    width: 120px;
+}
+#mes-clubsF{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 20% 30%;
+    grid-template-areas:
+        "MC . AFc"
+        "city . arsenal"
+        ". trophe ."
+        "Fcl . FcB"
+        "liverpool . barcelone"
+    ;
+    gap: 12px;
+    margin: auto;
+    animation: slide infinite 5s;
+    transition: .3s ease-out;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#mes-clubsF>li {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    color: var(--default);
+    background-color: var(--firstColor);
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+}
+#mes-clubsF>li>a{
+    text-decoration: none;
+    color: var(--default);
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#mes-clubsF>img{
+    padding: 8px;
+    margin-left: 15px;
+}
+#trophe{
+    grid-area: trophe;
+}
+#ManchersterCity{
+    grid-area: MC;   
+}
+#city{
+    grid-area: city;
+}
+#FcBarcelonne{
+    grid-area: FcB;   
+}
+#barcelone{
+    grid-area: barcelone;
+}
+#ArsenalFc{
+    grid-area: AFc;   
+}
+#arsenal{
+    grid-area: arsenal;
+}
+#FcLiverpool{
+    grid-area: Fcl;   
+}
+#liverpool{
+    grid-area: liverpool;
+}
+#jeuxFavoris{
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: ". tod fifa2023 .";
+    gap: 8px;
+    align-items: center;
+}
+.jeux{
+    object-fit: cover;
+    height: 250px;
+    width: auto;
+}
+#fifa{
+    grid-area: fifa2023;
+}
+#ToD{
+    grid-area: tod;
+}
+#somaire{
+    position: fixed;
+    width: 180px;
+    background-color: #ffffff9b;
+    /* float: right; */
+    right: 0;
+    bottom: 30px;
+    margin: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: -1px -3px 8px var(--secondColor);
+    color: var(--secondColor);
+    font-size: 15px;
+}
+.titre-somaire{
+    color: var(--firstColor);
+    text-align: center;
+}
+#Liste{
+    text-align: center;
+    align-items: center;
+    margin-left: -40px;
+}
+#Liste>li{
+    color: var(--secondColor);
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    background-color: var(--firstColor);
+    list-style-type: none;
+    border: none;
+    border-radius: 8px;
+    color: var(--default);
+}
+#Liste>li>a{
+    text-decoration: none;
+    color: var(--default);
+}
+#Liste>li:hover {
+    background-color: var(--thirdColorOpacity);
+    box-shadow: 1px 1px 2px var(--secondColor);
+    /* border: 1px solid var(--firstColor); */
+}
+#Liste>li:hover>a{
+    color: var(--firstColor);
+}
+/* #Liste>li>a */
+.sous-liste{
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: -210px;
+    top: -50px;
+    background: transparent;
+    list-style-type: none;
+    border: none;
+    border-radius: 12px;
+    /* transition: .1s ease-out; */
+}
+.sous-liste>li{
+    margin: 3px;
+    padding: 6px;
+    background-color: var(--firstColor);
+    border: none;
+    border-radius: 5px;
+    transition: .3s ease-out;
+    /* la transition de la ligne ci haut pose problème */
+}
+.sous-liste>li:hover{
+    background-color: var(--thirdColorOpacity);
+    box-shadow: 1px 1px 2px var(--secondColor);
+}
+.sous-liste>li>a{
+    text-decoration: none;
+    color: var(--default);
+}
+.sous-liste>li:hover>a{
+    color: var(--firstColor);
+}
+#lienSport:hover #sous-liste-clubs{
+    visibility: visible;
+}
+#lienSport>a{
+    position: relative;
+    display: grid;
+}
+#lienSport>a::before{
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    right: 90px;
+    top: 2.5px;
+    transition: .3s ease-out;
+    transform: rotate(180deg);
+    text-align: center;
+}
+#lienSport:hover a{
+    padding-right: 10px;
+}
+#lienSport:hover>a::before{
+    opacity: 1;
+    right: 100px;
+    text-align: center;
+}
+#sous-liste-artistes{
+    /* visibility: visible; */
+    top: -38px;
+}
+#lienMusique:hover #sous-liste-artistes{
+    visibility: visible;
+}
+
+#lienMusique>a{
+    position: relative;
+    display: grid;
+}
+#lienMusique>a::before{
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    right: 100px;
+    top: 2.5px;
+    transition: .3s ease-out;
+    transform: rotate(180deg);
+    text-align: center;
+}
+#lienMusique:hover a{
+    padding-right: 10px;
+}
+#lienMusique:hover>a::before{
+    opacity: 1;
+    right: 110px;
+    text-align: center;
+}
+#toggle{
+    position: fixed;
+    width: 18px;
+    height: 50px;
+    background-color: var(--firstColor);
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    bottom: 150px;
+    margin: 25px;
+    right: 180px;
+    padding-top: 5px;
+    text-align: center;
+    z-index: 1;
+    content: "\00bb";
+    font-size: 15px;
+    color: var(--default);
+    font-size: 30px;
+    transition: .3s ease-out;
+}
+#toggle:hover{
+    cursor: pointer;
+}
+/* #toggle>span::before{
+    content: "«";
+} */
+#un::before{
+    content: "»";
+}
+#show{
+    visibility: hidden;
+}
+#show:checked + #toggle{
+    right: 80px;
+}
+#show:checked + #toggle #somaire{
+    content: "»";
+    color: var(--secondColor);    
+    /* transform: rotate(180deg); */
+    /* visibility: hidden; */
+    transform: translateX(120%);
+    transition: .3s ease-out;
+}
+#show:checked + #toggle span::before{
+    content: "«";
+}
+/* #show:checked{
+    #somaire{
+        visibility: hidden;
+    }
+} */
+/* @media (max-width: 768px) {
+    #musiqueSpace{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 50px;
+    }
+    #jeuxFavoris{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mes-clubsF{
+        position: relative;
+        grid-template-columns: 40% 20% 40%;
+        width: 360px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: 0;
+    }
+} */
+@media (max-width: 1200px) and (min-width: 769px) {
+    #musiqueSpace{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "Gims Black_M"
+        "Niska Ninho "
+        ;
+        gap: 12px;
+        padding: 0;
+        margin-top: 50px;
+    }
+    #jeuxFavoris{
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas: ". tod fifa2023 .";
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .jeux{
+        object-fit: cover;
+        height: 160px;
+        width: auto;
+    }
+    #somaire{
+        position: fixed;
+        width: 120px;
+        font-size: 10px;
+        bottom: 70px;
+    }
+    #un::before{
+        content: "»";
+    }
+    #show:checked + #toggle{
+        right: 1px;
+    }
+    #toggle{
+        right: 118px;
+        bottom: 180px;
+    }
+}
+@media (max-width: 768px) {
+    #musiqueSpace{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "Gims Black_M"
+            "Niska Ninho "
+        ;
+    }
+    #mes-clubsF{
+        position: relative;
+        grid-template-columns: 40% 20% 40%;
+        width: 360px;
+        grid-template-areas:
+        "MC . AFc"
+        "city . arsenal"
+        ". trophe ."
+        "Fcl . FcB"
+        "liverpool . barcelone"
+        ;
+        margin: auto 20%;
+        padding: auto;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding-inline-start: 0;
+    }
+    #jeuxFavoris{
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas: ". tod fifa2023 .";
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .jeux{
+        object-fit: cover;
+        height: 140px;
+        width: auto;
+    }
+    #somaire{
+        position: fixed;
+        width: 120px;
+        font-size: 10px;
+        bottom: 70px;
+    }
+    #un::before{
+        content: "»";
+    }
+    #show:checked + #toggle{
+        right: 1px;
+    }
+    #toggle{
+        right: 118px;
+        bottom: 180px;
+    }  
+
+}
+
+@media(max-width: 576px){
+    #musiqueSpace{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "Gims"
+            "Black_M"
+            "Niska"
+            "Ninho "
+        ;
+        width: 90%;
+    }
+    .card-img{
+        object-fit: unset;
+    }
+    #mes-clubsF{
+        position: relative;
+        grid-template-columns: 40% 30% 40%;
+        width: 360px;
+        grid-template-areas:
+        "MC . AFc"
+        "city . arsenal"
+        ". trophe ."
+        "Fcl . FcB"
+        "liverpool . barcelone"
+        ;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding-inline-start: 0;
+    }
+    #jeuxFavoris{
+        grid-template-columns: 1fr;
+        grid-template-areas: "tod"
+        "fifa2023";
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .jeux{
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+    .interet-item{
+        /* position: relative; */
+        width: 50%;
+    }
+}
+
